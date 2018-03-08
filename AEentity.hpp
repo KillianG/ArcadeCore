@@ -11,7 +11,7 @@
 #include "arcade.hpp"
 
 class AEntity {
-private:
+protected:
 	arcade::FPoint pos;
 	float angle;
 	int key_traductor;
