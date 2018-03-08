@@ -13,8 +13,8 @@
 
 namespace arcade {
 	struct IPoint {
-	std::size_t x;
-	std::size_t y;
+		std::size_t x;
+		std::size_t y;
 	};
 
 	struct FPoint {
@@ -31,11 +31,7 @@ namespace arcade {
 
 	struct Traductor {
 		enum class Types {
-			SQUARE,
-			LINE,
-			CIRCLE,
-			TRIANGLE,
-			SPRITE,
+			SQUARE, LINE, CIRCLE, TRIANGLE, SPRITE,
 		};
 		arcade::Traductor::Types type;
 		std::string spritePath;
@@ -43,6 +39,7 @@ namespace arcade {
 		arcade::Color couleur;
 		arcade::IPoint size;
 	};
-};
+}
+;
 
 #endif

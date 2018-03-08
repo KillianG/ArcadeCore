@@ -1,32 +1,35 @@
 /*
-** EPITECH PROJECT, 2018
-** Epitech scolarship project (4 years remaining)
-** File description:
-**      Made on 2018/03 by ebernard
-*/
+ ** EPITECH PROJECT, 2018
+ ** Epitech scolarship project (4 years remaining)
+ ** File description:
+ **      Made on 2018/03 by ebernard
+ */
 
 #ifndef CPP_ARCADE_IGAMEMANAGER_HPP
 #define CPP_ARCADE_IGAMEMANAGER_HPP
 
-#include <string>
-#include <vector>
+#include <cstddef>
 #include <map>
+#include <string>
+#include <utility>
+#include <vector>
+
 #include "arcade.hpp"
 #include "AEentity.hpp"
 #include "IGfxManager.hpp"
 
-namespace arcade
-{
-	class IGameManager
-	{
+namespace arcade {
+	class IGameManager {
 	public:
+		virtual ~IGameManager() = default;
 		virtual std::vector<std::pair<std::string, std::size_t>> &getScoreBoard() = 0;
 		virtual arcade::IPoint &initGame() = 0;
 		virtual int run(arcade::IGfxManager::Keys &) = 0;
-		virtual std::vector <AEntity> &getEntity() const = 0;
+		virtual std::vector<AEntity> &getEntity() const = 0;
 		virtual std::vector<std::vector<int>> &getMap() const = 0;
 		virtual std::map<unsigned char, Traductor> &getTraductor() const = 0;
 	};
-};
+}
+;
 
 #endif //CPP_ARCADE_IGAMEMANAGER_HPP
