@@ -12,16 +12,12 @@
 #include <vector>
 
 namespace arcade {
-	struct IPoint {
-		std::size_t x;
-		std::size_t y;
+	template <typename T>
+	struct Point {
+		T x;
+		T y;
 	};
-
-	struct FPoint {
-		float x;
-		float y;
-	};
-
+	
 	struct Color {
 		unsigned char r;
 		unsigned char g;
