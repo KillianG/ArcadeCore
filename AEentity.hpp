@@ -12,7 +12,7 @@
 
 class AEntity {
 protected:
-	arcade::FPoint pos;
+	arcade::Point <float>pos;
 	float angle;
 	int key_traductor;
 };

@@ -17,7 +17,7 @@ namespace arcade {
 		T x;
 		T y;
 	};
-	
+
 	struct Color {
 		unsigned char r;
 		unsigned char g;
@@ -33,9 +33,8 @@ namespace arcade {
 		std::string spritePath;
 		std::string asciiSprite;
 		arcade::Color couleur;
-		arcade::IPoint size;
+		arcade::Point <std::size_t>size;
 	};
 }
-;
 
 #endif

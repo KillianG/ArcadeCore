@@ -20,14 +20,14 @@ namespace arcade {
 		enum class Keys {
 			UP, DOWN, LEFT, RIGHT
 		};
-		virtual void initWindow(arcade::IPoint &size, std::string &name) = 0;
-		virtual void getTraductor(std::map<unsigned char, Traductor> &map) = 0;
+		virtual void initWindow(arcade::Point <std::size_t>&size, std::string &name) = 0;
 		virtual std::string getPlayerName();
-		virtual void draw(std::vector<AEntity> &sprite) = 0;
+		virtual void setTraductor(std::map<unsigned char, Traductor> &map) = 0;
+		virtual void drawENtity(std::vector<AEntity> &sprite) = 0;
+		virtual void drawMap(std::vector<std::vector<unsigned char>> &map) = 0;
 		virtual arcade::IGfxManager::Keys getEvent() = 0;
 		virtual bool isWindowOpen() = 0;
 	};
 }
-;
 
 #endif //CPP_ARCADE_IGFXMANAGER_HPP
