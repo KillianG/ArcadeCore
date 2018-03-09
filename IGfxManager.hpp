@@ -20,9 +20,12 @@ namespace arcade {
 		enum class Keys {
 			UP, DOWN, LEFT, RIGHT
 		};
-		virtual void initWindow(arcade::IPoint &) = 0;
-		virtual void draw(std::vector<AEntity> &) = 0;
-		virtual arcade::IGfxManager::Keys getEvent() const = 0;
+		virtual void initWindow(arcade::IPoint &size, std::string &name) = 0;
+		virtual void getTraductor(std::map<unsigned char, Traductor> &map) = 0;
+		virtual std::string getPlayerName();
+		virtual void draw(std::vector<AEntity> &sprite) = 0;
+		virtual arcade::IGfxManager::Keys getEvent() = 0;
+		virtual bool isWindowOpen() = 0;
 	};
 }
 ;

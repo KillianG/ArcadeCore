@@ -1,22 +1,21 @@
 /*
- ** EPITECH PROJECT, 2018
- ** Epitech scolarship project (4 years remaining)
- ** File description:
- **      Made on 2018/03 by ebernard
- */
+** EPITECH PROJECT, 2018
+** Epitech scolarship project (4 years remaining)
+** File description:
+**      Made on 2018/03 by ebernard
+*/
 
 #ifndef CPP_ARCADE_IGAMEMANAGER_HPP
-#define CPP_ARCADE_IGAMEMANAGER_HPP
+# define CPP_ARCADE_IGAMEMANAGER_HPP
 
-#include <cstddef>
-#include <map>
-#include <string>
-#include <utility>
-#include <vector>
-
-#include "arcade.hpp"
-#include "AEentity.hpp"
-#include "IGfxManager.hpp"
+# include <cstddef>
+# include <map>
+# include <string>
+# include <utility>
+# include <vector>
+# include "arcade.hpp"
+# include "AEentity.hpp"
+# include "IGfxManager.hpp"
 
 namespace arcade {
 	class IGameManager {
@@ -28,6 +27,7 @@ namespace arcade {
 		virtual std::vector<AEntity>getEntity() const = 0;
 		virtual std::vector<std::vector<unsigned char>> getMap() const = 0;
 		virtual std::map<unsigned char, Traductor> getTraductor() const = 0;
+		virtual void setPlayerName(std::string &name);
 	};
 }
 ;
