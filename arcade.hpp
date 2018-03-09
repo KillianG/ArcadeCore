@@ -33,7 +33,6 @@ namespace arcade {
 		std::string spritePath;
 		std::string asciiSprite;
 		arcade::Color couleur;
-		arcade::Point <std::size_t>size;
 	};
 }
 
