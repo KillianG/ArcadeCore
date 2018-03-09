@@ -27,7 +27,7 @@ namespace arcade {
 		virtual std::vector<AEntity>getEntity() const = 0;
 		virtual std::vector<std::vector<unsigned char>> getMap() const = 0;
 		virtual std::map<unsigned char, Traductor> getTraductor() const = 0;
-		virtual void setPlayerName(std::string &name);
+		virtual void setPlayerName(std::string &name) = 0;
 	};
 }
 ;

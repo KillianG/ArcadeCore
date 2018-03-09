@@ -21,7 +21,7 @@ namespace arcade {
 			UP, DOWN, LEFT, RIGHT
 		};
 		virtual void initWindow(arcade::Point <std::size_t>&size, std::string &name) = 0;
-		virtual std::string getPlayerName();
+		virtual std::string getPlayerName() = 0;
 		virtual void setTraductor(std::map<unsigned char, Traductor> &map) = 0;
 		virtual void drawENtity(std::vector<AEntity> &sprite) = 0;
 		virtual void drawMap(std::vector<std::vector<unsigned char>> &map) = 0;
