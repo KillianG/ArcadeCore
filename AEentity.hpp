@@ -10,11 +10,13 @@
 
 #include "arcade.hpp"
 
-class AEntity {
-protected:
-	arcade::Point <float>pos;
-	float angle;
-	int key_traductor;
-};
+namespace arcade {
+	class AEntity {
+	protected:
+		arcade::Point <float>pos;
+		float angle;
+		int key_traductor;
+	};
+}
 
 #endif //CPP_ARCADE_AEENTITY_HPP
