@@ -10,6 +10,7 @@
 
 #include <string>
 #include <vector>
+#include <map>
 #include "arcade.hpp"
 #include "AEentity.hpp"
 
