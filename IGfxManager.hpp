@@ -19,7 +19,7 @@ namespace arcade {
 	public:
 		virtual ~IGfxManager() = default;
 		enum class Keys {
-			UP, DOWN, LEFT, RIGHT
+			NONE, UP, DOWN, LEFT, RIGHT
 		};
 		virtual void initWindow(arcade::Point <std::size_t> size, std::string name) = 0;
 		virtual std::string getPlayerName() = 0;
