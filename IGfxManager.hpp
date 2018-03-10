@@ -19,7 +19,7 @@ namespace arcade {
 	public:
 		virtual ~IGfxManager() = default;
 		enum class Keys {
-			NONE, CLOSE, ENTER,
+			NONE, CLOSE,
 			UP, DOWN, LEFT, RIGHT, ACTION,
 			NEXTGAME, PREVGAME,
 			NEXTGFX, PREVGFX,
