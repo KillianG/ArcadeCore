@@ -21,7 +21,7 @@ namespace arcade {
 		enum class Keys {
 			UP, DOWN, LEFT, RIGHT
 		};
-		virtual void initWindow(arcade::Point <std::size_t>&size, std::string &name) = 0;
+		virtual void initWindow(arcade::Point <std::size_t> size, std::string name) = 0;
 		virtual std::string getPlayerName() = 0;
 		virtual void setTraductor(std::map<unsigned char, Traductor> &map) = 0;
 		virtual void drawEntity(std::vector<AEntity> &sprite) = 0;
