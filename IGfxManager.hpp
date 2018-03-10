@@ -23,9 +23,9 @@ namespace arcade {
 		};
 		virtual void initWindow(arcade::Point <std::size_t> size, std::string name) = 0;
 		virtual std::string getPlayerName() = 0;
-		virtual void setTraductor(std::map<unsigned char, Traductor> &map) = 0;
+		virtual void setTraductor(const std::map<unsigned char, Traductor> &map) = 0;
 		virtual void drawEntity(std::vector<AEntity> &sprite) = 0;
-		virtual void drawMap(std::vector<std::vector<unsigned char>> &map) = 0;
+		virtual void drawMap(const std::vector<std::vector<unsigned char>> &map) = 0;
 		virtual arcade::IGfxManager::Keys getEvent() = 0;
 		virtual bool isWindowOpen() = 0;
 	};
