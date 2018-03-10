@@ -14,7 +14,7 @@
 # include <utility>
 # include <vector>
 # include "arcade.hpp"
-# include "AEentity.hpp"
+# include "AEntity.hpp"
 # include "IGfxManager.hpp"
 
 namespace arcade {

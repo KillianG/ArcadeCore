@@ -12,7 +12,7 @@
 #include <vector>
 #include <map>
 #include "arcade.hpp"
-#include "AEentity.hpp"
+#include "AEntity.hpp"
 
 namespace arcade {
 	class IGfxManager {
