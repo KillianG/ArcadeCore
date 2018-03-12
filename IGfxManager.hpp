@@ -28,7 +28,7 @@ namespace arcade {
 		/*
 		** formatage -> gfxName\n\n\ngameName\n\n\nPlayerName
 		*/
-		virtual std::string showMenu(std::vector<std::string> gfxName, std::vector<std::string> gameName) = 0;
+		virtual std::string showMenu(std::vector<std::string> &gfxName, std::vector<std::string> &gameName) = 0;
 		virtual std::string getPlayerName() = 0;
 		virtual void setTraductor(const std::map<unsigned char, Traductor> &map) = 0;
 		virtual void drawEntity(std::vector<AEntity> &sprite) = 0;
