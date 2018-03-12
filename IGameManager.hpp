@@ -30,5 +30,11 @@ namespace arcade {
 		virtual void setPlayerName(std::string &name) = 0;
 	};
 }
+/*
+** std::string getName();
+** arcade::IGameManager *entryPoint();
+*/
+
+
 
 #endif //CPP_ARCADE_IGAMEMANAGER_HPP

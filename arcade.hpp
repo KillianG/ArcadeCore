@@ -1,9 +1,9 @@
 /*
- ** EPITECH PROJECT, 2018
- ** 
- ** File description:
- ** description
- */
+** EPITECH PROJECT, 2018
+**
+** File description:
+** description
+*/
 
 #ifndef ARCADE_HPP
 # define ARCADE_HPP
