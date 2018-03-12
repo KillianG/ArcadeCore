@@ -19,7 +19,7 @@ namespace arcade {
 	protected:
 		arcade::Point <float>pos;
 		float angle;
-		unsigned char key_traductor;
+		unsigned char keyTraductor;
 	};
 }
 
