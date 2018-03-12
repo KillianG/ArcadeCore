@@ -30,6 +30,5 @@ namespace arcade {
 		virtual void setPlayerName(std::string &name) = 0;
 	};
 }
-;
 
 #endif //CPP_ARCADE_IGAMEMANAGER_HPP
