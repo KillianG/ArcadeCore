@@ -32,9 +32,10 @@ namespace arcade {
 
 	struct Traductor {
 		enum class Types {
-			SQUARE, LINE, CIRCLE, TRIANGLE, SPRITE,
+			SQUARE, LINE, CIRCLE, TRIANGLE, SPRITE, TEXT
 		};
 		arcade::Traductor::Types type;
+		std::string text;
 		std::string spritePath;
 		std::string asciiSprite;
 		arcade::Color couleur;
