@@ -13,12 +13,7 @@
 
 namespace arcade {
 	template <typename T>
-	class Point {
-	public:
-		Point(T _x, T _y) {
-			x = _x;
-			y = _y;
-		}
+	struct Point {
 		T x;
 		T y;
 	};

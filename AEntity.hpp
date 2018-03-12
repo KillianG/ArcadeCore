@@ -13,6 +13,7 @@
 namespace arcade {
 	class AEntity {
 	public:
+		AEntity() = default;
 		virtual ~AEntity() = default;
 		virtual arcade::Point <float> getPos() const = 0;
 		virtual float getAngle() const = 0;
@@ -20,7 +21,7 @@ namespace arcade {
 	protected:
 		arcade::Point <float>pos;
 		float angle;
-		unsigned char keyTraductor;
+		unsigned char key_traductor;
 	};
 }
 
