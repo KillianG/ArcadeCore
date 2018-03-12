@@ -13,9 +13,9 @@
 namespace arcade {
 	class AEntity {
 	public:
-		arcade::Point <float> getPos() const = 0;
-		float getAngle() const = 0;
-		int getKeyTraductor() const = 0;
+		virtual arcade::Point <float> getPos() const = 0;
+		virtual float getAngle() const = 0;
+		virtual int getKeyTraductor() const = 0;
 	protected:
 		arcade::Point <float>pos;
 		float angle;
