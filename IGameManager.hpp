@@ -25,7 +25,7 @@ namespace arcade {
 		virtual std::vector<std::pair<std::string, std::size_t>> getScoreBoard() = 0;
 		virtual arcade::Point <std::size_t>initGame() = 0;
 		virtual int run(arcade::IGfxManager::Keys &) = 0;
-		virtual const std::vector<std::unique_ptr<arcade::AEntity>> &getEntities() const = 0;
+		virtual const std::vector<std::unique_ptr<arcade::AEntity>> &getEntities()= 0;
 		virtual const std::vector<std::vector<unsigned char>> &getMap() const = 0;
 		virtual const std::map<unsigned char, Traductor> &getTraductor() const = 0;
 		virtual void setPlayerName(std::string &name) = 0;
