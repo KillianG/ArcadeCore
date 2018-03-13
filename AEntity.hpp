@@ -18,10 +18,11 @@ namespace arcade {
 		virtual arcade::Point <float> getPos() const = 0;
 		virtual float getAngle() const = 0;
 		virtual unsigned char getKeyTraductor() const = 0;
+
 	protected:
-		arcade::Point <float>pos;
-		float angle;
-		unsigned char key_traductor;
+		arcade::Point<float> pos;
+		float angle = 0;
+		unsigned char key_traductor = 0;
 	};
 }
 
