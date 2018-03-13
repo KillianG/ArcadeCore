@@ -32,7 +32,7 @@ namespace arcade {
 		virtual std::string showMenu(std::vector<std::string> &gfxName, std::vector<std::string> &gameName) = 0;
 		virtual std::string getPlayerName() = 0;
 		virtual void setTraductor(const std::map<unsigned char, Traductor> &map) = 0;
-		virtual void drawEntities(const std::vector<std::unique_ptr<AEntity>> &sprite) = 0;
+		virtual void drawEntities(const std::vector<AEntity *> &sprite) = 0;
 		virtual void drawMap(const std::vector<std::vector<unsigned char>> &map) = 0;
 		virtual arcade::IGfxManager::Keys getEvent() = 0;
 	};
