@@ -21,8 +21,8 @@ namespace arcade {
 
 	protected:
 		arcade::Point<float> pos;
-		float angle = 0;
-		unsigned char key_traductor = 0;
+		float angle;
+		unsigned char key_traductor;
 	};
 }
 
