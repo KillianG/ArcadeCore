@@ -14,6 +14,7 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <unordered_map>
 
 #include "arcade.hpp"
 #include "IGfxManager.hpp"
@@ -27,7 +28,7 @@ namespace arcade {
 		virtual int run(arcade::IGfxManager::Keys) = 0;
 		virtual const std::vector<arcade::AEntity *> &getEntities() = 0;
 		virtual const std::vector<std::vector<unsigned char>> &getMap() const = 0;
-		virtual const std::map<unsigned char, Traductor> &getTraductor() const = 0;
+		virtual const std::unordered_map<unsigned char, Traductor> &getTraductor() const = 0;
 		virtual void setPlayerName(std::string &name) = 0;
 	};
 }
