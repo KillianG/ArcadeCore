@@ -25,10 +25,16 @@ namespace arcade {
 		unsigned char a;
 	};
 
+	struct menuInfo {
+		std::string playerName;
+		std::string gfxName;
+		std::string gameName;
+	};
+
 	struct Traductor {
 		std::string text;
 		std::string spritePath;
-        unsigned char asciiChar;
+		unsigned char asciiChar;
 		arcade::Color color;
 		std::string hexColor;
 	};
