@@ -125,11 +125,11 @@ namespace arcade {
 			Pause,
 			KeyCount
 		};
-		virtual const arcade::menuInfo initWindow(arcade::Point <std::size_t> size, std::string name) = 0;
+		virtual void initWindow(arcade::Point <std::size_t> size, std::string name) = 0;
 		/*
 		** formatage -> gfxName\n\n\ngameName\n\n\nPlayerName
 		*/
-		virtual std::string showMenu(std::vector<std::string> &gfxName, std::vector<std::string> &gameName) = 0;
+		virtual const arcade::menuInfo showMenu(std::vector<std::string> &gfxName, std::vector<std::string> &gameName) = 0;
 		virtual void setTraductor(const std::unordered_map<unsigned char, Traductor> &map) = 0;
 		virtual void drawEntities(const std::vector<AEntity *> &sprite) = 0;
 		virtual void drawMap(const std::vector<std::vector<unsigned char>> &map) = 0;
