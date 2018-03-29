@@ -36,7 +36,6 @@ namespace arcade {
 		std::string spritePath;
 		unsigned char asciiChar;
 		arcade::Color color;
-		std::string hexColor;
 	};
 }
 
