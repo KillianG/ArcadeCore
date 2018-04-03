@@ -31,6 +31,12 @@ namespace arcade {
 		std::string gameName;
 	};
 
+	struct guiInfo {
+		std::string playerName;
+		int remainingLives;
+		int score;
+	};
+
 	struct Traductor {
 		std::string text;
 		std::string spritePath;
