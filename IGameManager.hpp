@@ -33,8 +33,8 @@ namespace arcade {
 		virtual const std::vector<arcade::AEntity *> &getEntities() const = 0;
 		virtual const std::vector<std::vector<unsigned char>> &getMap() const = 0;
 		virtual const std::unordered_map<unsigned char, Traductor> &getTraductor() const = 0;
-		virtual void setPlayerName(std::string &name) = 0;
-		virtual void getUI() const = 0;
+		virtual void setPlayerName(const std::string &name) = 0;
+		virtual const guiInfo &getGUI() const = 0;
 	};
 }
 /*
