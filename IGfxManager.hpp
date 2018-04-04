@@ -135,6 +135,7 @@ namespace arcade {
 		virtual void drawMap(const std::vector<std::vector<unsigned char>> &map) = 0;
 		virtual void showScoreBoard(const std::vector<std::pair<std::string, std::size_t>> &scoreBoard) = 0;
 		virtual arcade::IGfxManager::Keys getEvent() = 0;
+		virtual void drawUI() = 0;
 	};
 }
 
